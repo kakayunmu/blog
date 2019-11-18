@@ -60,7 +60,7 @@
 ## 3、配置tcp服务器
 配置服务并启动
 
-![tcp服务器](./image/0001.png)
+![tcp服务器](/nginxTcpConfig/0001.png)
 
 ## 4、配置nginx
 apt方式安装的 nginx 配置文件默认在 **/etc/nginx/** 文件夹下，打开主配置文件 **nginx.conf** 添加如下代码
@@ -97,16 +97,16 @@ server{
 ```shell
 telnet localhost 9004
 ```
-![](./image/0002.png)
+![](/nginxTcpConfig/0002.png)
 
 看样子是链接上了，我们上tcp服务器看看他是连接的哪个
-![](./image/0003.png)
+![](/nginxTcpConfig/0003.png)
 
 链接到我们tcp服务器1上了，我们再启动一个tcp客户端并发送 **123abc** 字符串到服务器
-![](./image/0004.png)
+![](/nginxTcpConfig/0004.png)
 
 我们发送了**123abc**到服务器，服务器给我们返回了**123abc**回来，再看下这次是链接的哪台服务器
-![](./image/0005.png)
+![](/nginxTcpConfig/0005.png)
 
 这次链接了另外一台。
 
